@@ -303,100 +303,166 @@ body{
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: calc(100vh - 80px);
-    /* align-items: center; */
+    min-height: calc(100vh - 80px);
+    align-items: center;
     background-color: #e3c7a5;
-    font-family: Arial, Helvetica, sans-serif;
 }
-
-.hero-text {
-    flex: 1;
-    padding: 60px;
+  
+.hero-content {
+    padding: 2rem 2rem 2rem 4rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
 }
-
-.hero-text h1 {
-    font-size: 64px;
-    font-weight: 700;
+  
+.hero-text {
+    max-width: 600px;
+}
+  
+.hero-text h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
     color: #4b2e24;
-    margin-bottom: 20px;
-    line-height: 1.2;
 }
-
+  
 .hero-text p {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 30px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
     color: #291c0e;
     max-width: 500px;
-    line-height: 1.5;
 }
-.hero-image {
-  flex: 1;
-  background: url(/fur/bg.jpg) no-repeat center center;
-  background-size: cover;
+  
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
-.learn{
-    padding: 14px 16px;
-    border-radius: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+  
+.learn {
+    padding: 1rem 2rem;
+    font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    border: none;
+    border-radius: 50px;
     background-color: #4b2e24;
+    border: 1px solid #4b2e24;
+    text-decoration: none;
     color: #e3c7a5;
 }
-.learn:hover{
+  
+.learn:hover {
+    border-color: 2px solid #4b2e24;
     background-color: #e3c7a5;
-    border: 2px solid #4b2e24;
     color: #4b2e24;
-    /* transform: translateY(-2px); */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5) ;
+    transform: translateY(-2px);
 }
-.learn-icon{
-    transition: transform 0.5s ease;
+  
+.btn-icon {
+    transition: transform 0.3s ease;
 }
-.learn:hover .learn-icon{
+  
+.learn:hover .btn-icon {
     transform: translateX(4px);
 }
-@media (max-width: 768px){
+  
+.hero-image {
+    position: relative;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+}
+  
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+  
+  /* Responsive Design */
+@media (max-width: 1200px) {
+    .hero-text h2 {
+        font-size: 3.5rem;
+    }
+    
+    .hero-content {
+        padding: 2rem;
+    }
+}
+  
+@media (max-width: 968px) {
     .hero {
         grid-template-columns: 1fr;
-        text-align: center;
+        grid-template-rows: auto 1fr;
     }
-
+    
+    .hero-content {
+        padding: 3rem 2rem;
+        min-height: auto;
+        order: 2;
+    }
+  
     .hero-image {
         height: 50vh;
         order: 1;
     }
-    .hero-text{
-        min-height: auto;
-        order: 2;
+    
+    .hero-text h2 {
+        font-size: 3.5rem;
     }
-    .hero-text h1 {
-        font-size: 40px;
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
     }
-    .hero-text p{
-        font-size: 16px;
+    
+    .learn {
+        justify-content: center;
+        text-align: center;
+    }  
+
+}
+  
+@media (max-width: 768px) {  
+    .hero-text h2 {
+        font-size: 3rem;
     }
-    .learn{
-        padding: 12px 24px;
-        font-size: 15px;
+  
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+  
+    .hero-content {
+        padding: 32px 24px;
     }
 }
-@media (max-width: 480px){
-    .hero-text h1{
-        font-size: 32px;
+  
+@media (max-width: 480px) {
+    .hero-text h2 {
+        font-size: 2rem;
     }
-    .learn{
-        width: 100%;
-        display: block;
-        padding: 12px;
+  
+    .hero-content {
+        padding: 1.5rem 1rem;
+    }
+  
+    .learn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
     }
 }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
 /* Havenmade Collection */
 .interior{
     max-width: 1200px;
