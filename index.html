@@ -72,36 +72,43 @@
       <h1 class="title">Our Havenmade Collections</h1>
 
       <div class="grid cat">
-        <div class="category" style="background-image: url(/fur/Mock\ up\ poster\ frame\ in\ home\ interior\ background….jpeg);">
+        <div class="category" data-set="1" style="background-image: url(/fur/Mock\ up\ poster\ frame\ in\ home\ interior\ background….jpeg);">
           <div class="item">
             <h3>Living-Room  Design</h3>
           </div>
         </div>
-        <div class="category" style="background-image: url(/fur/kitchen\ 3.jpeg);">
+        <div class="category" data-set="2" style="background-image: url(/fur/kitchen\ 3.jpeg);">
           <div class="item">
             <h3>Kitchen  Design</h3>
           </div>
         </div>
-        <div class="category" style="background-image: url(/fur/bed\ 6.jpeg);">
+        <div class="category" data-set="3" style="background-image: url(/fur/bed\ 6.jpeg);">
           <div class="item">
             <h3>Bed-Room  Design</h3>
           </div>
         </div>
-        <div class="category" style="background-image: url(/fur/outdoor.jpeg);">
+        <div class="category" data-set="4" style="background-image: url(/fur/outdoor.jpeg);">
           <div class="item">
             <h3>Outdoor Design</h3>
           </div>
         </div>
-        <div class="category" style="background-image: url(/fur/full-house.jpeg);">
+        <div class="category" data-set="5" style="background-image: url(/fur/full-house.jpeg);">
           <div class="item">
             <h3>Full-House Design</h3>
           </div>
         </div>
-        <div class="category" style="background: #e3c7a5; ">
+        <div class="category"  style="background: #e3c7a5; ">
           <div class="item">
             <h3 style="font-size: 25px;">View More &#8594; </h3>
           </div>
         </div>
+        <!-- Modal -->
+         <div class="modal" id="imageModal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <div class="slider" id="slider"></div>  
+            </div>
+         </div>
       </div>
     </section>
     
@@ -150,7 +157,7 @@
       <div class="book-text">
         <h2>Book Your Agents</h2>
         <p>We're a design interior company that transforms spaces into stunning works of art.
-        Would you like to schedule a consultation to explore your desings needs...BOOK NOW!!!</p>
+        Would you like to schedule a consultation to explore your design needs...BOOK NOW!!!</p>
         <ul>
           <li>Secure online bookings.</li>
           <li>Instant Confirmation.</li>
