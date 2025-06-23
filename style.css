@@ -857,7 +857,8 @@ body{
     display: flex;
     flex-direction: column;
 }
-.book-form input{
+.book-form input,
+.book-form select{
     padding: 10px;
     font-size: 14px;
     border: 1px solid #4b2e24;
@@ -881,6 +882,11 @@ body{
 .book-form button:hover{
     background-color: #4b2e24;
     color: #e3c7a5;
+}
+.success-message{
+    margin-top: 20px;
+    display: none;
+    font-size: 18px;
 }
 @media(max-width: 400px){
     .book-text h2{

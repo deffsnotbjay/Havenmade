@@ -150,7 +150,7 @@
       <div class="book-text">
         <h2>Book Your Agents</h2>
         <p>We're a design interior company that transforms spaces into stunning works of art.
-        Would you like to schedule a consulation to explore your desings needs...BOOK NOW!!!</p>
+        Would you like to schedule a consultation to explore your desings needs...BOOK NOW!!!</p>
         <ul>
           <li>Secure online bookings.</li>
           <li>Instant Confirmation.</li>
@@ -158,14 +158,21 @@
         </ul>
       </div>
 
-      <div class="book-form">
+      <div class="book-form" id="bookingForm">
         <h2>Bookings</h2>
         <form onsubmit="return bookService()">
           <input type="text" id="name"  placeholder="Full Name" required>
           <input type="email" id="email"  placeholder="Email" required>
           <input type="date" id="date" required>
           <input type="time" id="time" required>
+          <select id="service" required>
+            <option value="">Select a service</option>
+            <option value="Consultation">Consultation</option>
+            <option value="Installation">Installation</option>
+            <option value="Maintenance">Maintenance</option>
+          </select>
           <button type="submit">Confirm Booking</button>
+          <div class="success-message" id="successMessage">✅ Booking submitted successfully!</div>
         </form>
         <p id="booking-result"></p>
       </div>
