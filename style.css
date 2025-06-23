@@ -563,6 +563,9 @@ body{
     .modal-content {
         margin: 60px auto;
     }
+    .slider{
+        gap: 0;
+    }
     .close {
         top: -40px;
         font-size: 40px;
