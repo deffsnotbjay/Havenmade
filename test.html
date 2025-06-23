@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elegant Interiors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f5e9da;
+      color: #333;
+    }
+
+    header {
+      background: url('/head.jpg') no-repeat center center/cover;
+      color: black;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      background: transparent;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #f8f8f8;
+      padding: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-box, .portfolio-box {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      background: #fafafa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+    }
+
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Design That Inspires</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a passionate interior design team creating timeless spaces tailored to your lifestyle. From concept to completion, our work is rooted in creativity, functionality, and elegance.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Residential Design</h3>
+        <p>Transforming homes into personalized, functional sanctuaries.</p>
+      </div>
+      <div class="service-box">
+        <h3>Commercial Spaces</h3>
+        <p>Creating inspiring and productive environments for businesses.</p>
+      </div>
+      <div class="service-box">
+        <h3>Renovation</h3>
+        <p>Refreshing existing spaces with new life and modern design.</p>
+      </div>
+    </div>
+  </section>
+
+ <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="portfolio-box">
+        <img src="/Mock up poster frame in home interior background….jpeg" alt="Living Room" width="100%">
+        <p>Modern Living Room</p>
+      </div>
+      <div class="portfolio-box">
+        <img src="/Mock up poster frame in home interior background….jpeg" alt="Bedroom" width="100%">
+        <p>Cozy Bedroom</p>
+      </div>
+      <div class="portfolio-box">
+        <img src="/Mock up poster frame in home interior background….jpeg" alt="Kitchen" width="100%">
+        <p>Elegant Kitchen Space</p>
+      </div>
+    </div>
+  </section> 
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Ready to bring your vision to life? Let's talk about your next project!</p>
+    <p>Email: hello@elegantinteriors.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Elegant Interiors. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Havenmade Login</title>
+  <link rel="icon" href="/fur/fav.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left-section {
+      flex: 1;
+      background: url(/fur/login2.jpeg) no-repeat center/cover;
+      color: white;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 40px;
+      color: #4b2e24;
+      font-size: 35px;
+      font-weight: 800;
+    }
+
+    .card {
+      background: #e3c7a5;
+      color: #333;
+      padding: 20px 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .card-icon {
+      font-size: 40px;
+      background: #ffe4b3;
+      border-radius: 50%;
+      padding: 15px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .card-title {
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .right-section {
+      flex: 1;
+      background-color: #f5e9da;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 400px;
+      background: #e3c7a5;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .form-container h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #4b2e24;
+      margin-bottom: 10px;
+    }
+
+    .form-container p {
+      font-size: 14px;
+      color: #3a2c22;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 14px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #4b2e24;
+      outline: none;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .options input {
+      margin-right: 5px;
+    }
+
+    .options a {
+      color: #4b2e24;
+      text-decoration: none;
+    }
+    .options a:hover{
+        text-decoration: underline;
+    }
+
+    .btn {
+      background-color: #4b2e24;
+      color: #e3c7a5;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: transform 0.5s ease;
+    }
+    .btn:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .social-buttons button {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 8px 12px;
+      background: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .signup {
+      text-align: center;
+      font-size: 14px;
+    }
+    .signup a{
+        color: #4b2e24;
+        font-weight: 700;
+        text-decoration: none;
+        transition: text-decoration 0.5s ease;
+    }
+    .signup a:hover{
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="left-section">
+    <div class="logo">Havenmade</div>
+    <div class="card">
+      <div class="card-icon">🛋️</div>
+      <div class="card-title">Modern Furniture</div>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <div class="form-container">
+      <h2>Welcome Back</h2>
+      <p>Sign in to access your design projects and inspiration boards.</p>
+
+      <form>
+        <label for="text">Username</label>
+        <input type="text" id="text" placeholder="Username">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="password">
+
+        <div class="options">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button class="btn" type="submit">Sign In</button>
+      </form>
+
+      <div class="social-buttons">
+        <button>f</button>
+        <button>G</button>
+        <button></button>
+      </div>
+
+      <div class="signup">
+        Don't have an account? <a href="#">Sign up</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

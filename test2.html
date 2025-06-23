@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test2.css">
+    <link rel="icon" href="/fur/fav.ico">
+    <title>Havenmade</title>
+</head>
+<body>
+    <nav class="navbar-container">
+        <a href="#" class="navbar-logo">Havenmade</a>
+
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Desktop/Tablet View Navigation Links -->
+        <ul class="navbar-links-desktop" id="navbarLinksDesktop">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Bookings</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- Desktop/Tablet View Auth Buttons -->
+        <div class="navbar-auth-desktop" id="navbarAuthDesktop">
+            <button class="signup-btn">Sign Up</button>
+            <button class="login-btn">Login</button>
+        </div>
+
+        <!-- Mobile Menu Content (hidden on desktop, shown on mobile via JS) -->
+        <div class="mobile-menu-content" id="mobileMenuContent">
+            <ul class="navbar-links-mobile">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="navbar-auth-mobile">
+                <button class="signup-btn">Sign Up</button>
+                <button class="login-btn">Login</button>
+            </div>
+        </div>
+    </nav>
+  <section class="container">
+    <div class="head">
+      <p id="Authentic">Authentic Craftmanship</p>
+      <h1>Havenmade <br>Elegance for <br> Unique Lifestyle</h1>
+      <p>A business specialised in designing homes to feel like home <br> and crafting havenmade pieces to make you feel like home.</p>
+      <br><a href="#"><button>SHOP NOW</button></a>
+    </div>
+    <div class="head2"></div>
+  </section>
+<br>
+    <section class="interior">
+      <h2 class="sub">Crafted by Hand</h2>
+      <h1 class="title">Our Havenmade Collections</h1>
+
+      <div class="grid cat">
+        <div class="category" style="background-image: url(/fur/Mock\ up\ poster\ frame\ in\ home\ interior\ background….jpeg);">
+          <div class="item">
+            <h3>Living-Room  Design</h3>
+            <a href=""><button>Explore</button></a>
+          </div>
+        </div>
+        <div class="category" style="background-image: url(/fur/kitchen\ 3.jpeg);">
+          <div class="item">
+            <h3>Kitchen  Design</h3>
+            <a href=""><button>Explore</button></a>
+          </div>
+        </div>
+        <div class="category" style="background-image: url(/fur/bed\ 6.jpeg);">
+          <div class="item">
+            <h3>Bed-Room  Design</h3>
+            <a href=""><button>Explore</button></a>
+          </div>
+        </div>
+        <div class="category" style="background-image: url(/fur/outdoor.jpeg);">
+          <div class="item">
+            <h3>Outdoor Design</h3>
+            <a href=""><button>Explore</button></a>
+          </div>
+        </div>
+        <div class="category" style="background-image: url(/fur/full-house.jpeg);">
+          <div class="item">
+            <h3>Full-House Design</h3>
+            <a href=""><button>Explore</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  <section id="pro" class="collection">
+    <h2 style="text-align: center; font-size: 25px; color: #4b2e24;">Discover Our Havenmade Masterpiece</h2>
+    <p style="text-align: center; font-size: 13px; color: #291c0e;">Each piece is carefully crafted by skilled artisans with contemporary<br> designs to make anywhere feel like home </p>
+    <br>
+    <div class=" grid portfolio">
+      <div class="portfolio-box">
+        <img src="/fur/sofa 1.jpeg" alt="">
+        <p class="t">Full Set Sofa</p>
+        <p class="price">&#8358; 100,000</p> 
+        <button onclick="addtocart('Full Set Sofa', 100000)">Add to Cart</button>
+      </div>
+      <div class="portfolio-box">
+        <img src="/fur/sofa 2.jpeg" alt="">
+        <p class="t">Dark Blue Theme Sofa </p>
+        <p class="price">&#8358;75,000</p> 
+        <button onclick="addtocart('Dark Blue Theme Sofa', 75000)">Add to Cart</button>
+      </div>
+      <div class="portfolio-box">
+        <img src="/fur/center t 1.jpeg" alt="">
+        <p class="t">Center table</p>
+        <p class="price">&#8358; 40,000</p> 
+        <button onclick="addtocart('Center Table', 40000)">Add to Cart</button>
+      </div>
+      <div class="portfolio-box">
+        <img src="/fur/center t 2.jpeg" alt="">
+        <p class="t">Black Crystal Center</p>
+        <p class="price">&#8358; 50,000</p> 
+        <button onclick="addtocart('Black Crystal Center', 50000)">Add to Cart</button>
+      </div>
+      <div class="portfolio-box">
+        <img src="/fur/side 1.jpeg" alt="">
+        <p class="t">Elegant Side Table</p>
+        <p class="price">&#8358; 30,000</p>
+        <button onclick="addtocart('Elegant Side Table', 30000)">Add to Cart</button>
+      </div>
+      <div class="portfolio-box">
+        <img src="/fur/chair.jpeg" alt="">
+        <p class="t">Single Sofa</p>
+        <p class="price">&#8358; 25,000</p> 
+        <button onclick="addtocart('Single Sofa', 25000)">Add to Cart</button>
+      </div>
+    </div>
+    <!-- <div>
+      <a href="" class="see">See More</a>
+    </div> -->
+  </section>
+
+  <section id="about" class="about">
+    <div class="story">
+      <img class="right" src="/fur/details.jpeg" alt="Home">
+      <p class="story-head">Havenmade's Story</p>
+      <h4>Every Details Feels Like Home<br> With Havenmade</h4>
+      <p class="story-des">At Havenmade, We design homes and craft pieces to be  more than just
+      what it looks like--it's a reflection<br>that feels like home
+      to every customer, filled with stories that inspire us.</p>
+      <div class="client">
+        <div class="ava">
+          <img src="/fur/b man 2.jpeg" alt="client 1">
+          <img src="/fur/b woman.jpeg" alt="client 2">
+          <img src="/fur/b man.jpeg" alt="client 3">
+          <img src="/fur/b woman2.jpeg" alt="client 4">
+        </div>
+        <div class="rating">
+          <strong>Happy Clients<br>
+          &star;&star;&star;&star;&star;<br>
+          4.5 / 5.0 Google Reviews</strong>
+        </div>
+        <br>
+        <button class="btn"><a href="#">Customize Yours Now</a></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="gift">
+    <div class="gift-left">
+      <img src="/fur/TV.jpeg" alt="TV">
+    </div>
+
+    <div class="gift-right">
+      <h5>Made with Love</h5>
+      <h2>Unique Creations, Get Yours For Free</h2>
+      <p>From personlized keepsakes to beautifully designed artisinal pieces,every item <br> 
+        in our collection makes anywhere you go feel like home.</p>
+
+        <div class="gift-cards">
+          <div class="card">
+            <img src="/fur/Swing Chair.jpeg" alt="Swing Chair">
+            <h4>Swing Chair</h4>
+            <p>Free</p>
+          </div>
+          <div class="card">
+            <img src="/fur/Dressing Table.jpeg" alt="Dress Table">
+            <h4>Dressing Table</h4>
+            <p>Free</p>
+          </div>
+          <div class="card">
+            <img src="/fur/Flower self.jpeg" alt="Flower self">
+            <h4>Flower Self</h4>
+            <p>Free</p>
+          </div>
+        </div>
+        <a href="test.html"><button class="get">Get Yours Now</button></a>
+    </div>
+  </section>
+
+  <section id="bookings" class="booking">
+    <div class="book">
+      <div class="book-text">
+        <h2>Book Your Agents</h2>
+        <p>We're a design interior company that transforms spaces into stunning works of art.
+        Would you like to schedule a consulation to explore your desings needs...BOOK NOW!!!</p>
+        <ul>
+          <li>Secure online bookings.</li>
+          <li>Instant Confirmation.</li>
+          <li>No Extra fees.</li>
+        </ul>
+      </div>
+
+      <div class="book-form">
+        <h2>Bookings</h2>
+        <form onsubmit="return bookService()">
+          <input type="text" id="name"  placeholder="Full Name" required>
+          <input type="email" id="email"  placeholder="Email" required>
+          <input type="date" id="date" required>
+          <input type="time" id="time" required>
+          <button type="submit">Confirm Booking</button>
+        </form>
+        <p id="booking-result"></p>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Havenmade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+    <link rel="icon" href="/fur/fav.ico">
+
+</head>
+<body>
+    <!--nav bar-->
+  <nav class="navbar">
+    <div class="logo"> Havenmade</div>
+
+    <div class="hamburger-menu" id="hamburgerMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="menu" id="desktopmenu">
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#bookings">BOOKINGS</a></li>
+      <li><a href="#">SERVICE</a></li>
+      <li><a href="#pro">CONTACT</a></li>
+    </ul>
+    <div class="icons" id="icondesktop">
+      <a href="" class="signup">Get Started</a>
+    </div>
+
+    <div class="mobile-menu-content" id="mobileMenuContent">
+      <ul class="navbar-links-mobile">
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">BOOKINGS</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">PRODUCTS</a></li>
+      </ul>
+      <div class="icons" id="icondesktop">
+        <a href="" class="signup">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Where Home <br> Becomes Haven</h1>
+      <p>At Intidoor, we blend creativity and functionality to craft stunning, personalized interiors that reflect your unique taste. Our designs are as timeless as they are inspiring.</p>
+      <div class="container-button">
+        <button class="learn">
+          Learn More
+          <svg class="learn-icon" width="16" height="16" viewBox="0 0 15 10" fill="none">
+            <path d="M3.33334 8H12.6667M12.6667 8L8.66668 4M12.6667 8L8.66668 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="hero-image"></div>
+  </section>
+
+    <section class="interior">
+      <h2 class="sub">Crafted by Hand</h2>
+      <h1 class="title">Our Havenmade Collections</h1>
+
+      <div class="grid cat">
+        <div class="category" style="background-image: url(/fur/Mock\ up\ poster\ frame\ in\ home\ interior\ background….jpeg);">
+          <div class="item">
+            <h3>Living-Room  Design</h3>
+          </div>
+        </div>
+        <div class="category" style="background-image: url(/fur/kitchen\ 3.jpeg);">
+          <div class="item">
+            <h3>Kitchen  Design</h3>
+          </div>
+        </div>
+        <div class="category" style="background-image: url(/fur/bed\ 6.jpeg);">
+          <div class="item">
+            <h3>Bed-Room  Design</h3>
+          </div>
+        </div>
+        <div class="category" style="background-image: url(/fur/outdoor.jpeg);">
+          <div class="item">
+            <h3>Outdoor Design</h3>
+          </div>
+        </div>
+        <div class="category" style="background-image: url(/fur/full-house.jpeg);">
+          <div class="item">
+            <h3>Full-House Design</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+ 
+  <section id="about" class="about">
+    <div class="story">
+      <img class="right" src="/fur/details.jpeg" alt="Home">
+      <p class="story-head">Havenmade's Story</p>
+      <h4>Every Details Feels Like Home<br> With Havenmade</h4>
+      <p class="story-des">At Havenmade, We design homes and craft pieces to be  more than just
+      what it looks like--it's a reflection<br>that feels like home
+      to every customer, filled with stories that inspire us.</p>
+      <div class="client">
+        <div class="ava">
+          <img src="/fur/b man 2.jpeg" alt="client 1">
+          <img src="/fur/b woman.jpeg" alt="client 2">
+          <img src="/fur/b man.jpeg" alt="client 3">
+          <img src="/fur/b woman2.jpeg" alt="client 4">
+        </div>
+        <div class="rating">
+          <strong>Happy Clients<br>
+          &star;&star;&star;&star;&star;<br>
+          4.5 / 5.0 Google Reviews</strong>
+          <!-- <div class="rating-item">
+            <h2>20+</h2>
+            <p>Years of experience</p>
+          </div>
+          <div class="rating-item">
+            <h2>50+</h2>
+            <p>Team members</p>
+          </div>
+          <div class="rating-item">
+            <h2>200+</h2>
+            <p>Work completed</p>
+          </div> -->
+        </div>
+        <br>
+        <button class="btn"><a href="#">Customize Yours Now</a></button>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="bookings" class="booking">
+    <div class="book">
+      <div class="book-text">
+        <h2>Book Your Agents</h2>
+        <p>We're a design interior company that transforms spaces into stunning works of art.
+        Would you like to schedule a consulation to explore your desings needs...BOOK NOW!!!</p>
+        <ul>
+          <li>Secure online bookings.</li>
+          <li>Instant Confirmation.</li>
+          <li>No Extra fees.</li>
+        </ul>
+      </div>
+
+      <div class="book-form">
+        <h2>Bookings</h2>
+        <form onsubmit="return bookService()">
+          <input type="text" id="name"  placeholder="Full Name" required>
+          <input type="email" id="email"  placeholder="Email" required>
+          <input type="date" id="date" required>
+          <input type="time" id="time" required>
+          <button type="submit">Confirm Booking</button>
+        </form>
+        <p id="booking-result"></p>
+      </div>
+    </div>
+  </section>
+  <script src="havenmade.js"></script>
+</body>
+</html>

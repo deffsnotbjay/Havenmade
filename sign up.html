@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="icon" href="/fur/fav.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: url(/fur/hallucination.jpg);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container{
+        background-color: #e3c7a5;
+        display: flex;
+        width: 900px;
+        border-radius: 17px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .login{
+        flex: 1;
+        padding: 40px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .login-form{
+        width: 100%;
+    }
+
+    .login h2{
+        margin-bottom: 20px;
+        color: #9b4f3a;
+        position: relative;
+        left: 20px;
+    }
+
+    .login-form input[type="email"],
+    .login-form input[type="password"],
+    .login-form input[type="text"]{
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 75%;
+        border: none;
+        border-radius: 8px;
+        font-size: 13px;
+    }
+
+    .login button[type="submit"]{
+        width: 75%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        background-color: #9b4f3a;
+        font-weight: bold;
+    }
+
+    .remember{
+        display: flex;
+        align-items: center;
+        font-size: 0.95rem;
+        color: #9b4f3a;
+        margin-bottom: 10px;
+    }
+    .remember input{
+        margin-right: 10px;
+    }
+
+    .forgot{
+        position: relative;
+        bottom: 15px;
+        left: 220px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .forgot a{
+        color: #9b4f3a;
+        text-decoration: none;
+    }
+    .forgot a:hover{
+        text-decoration: underline;
+    }
+
+    .or{
+        position: relative;
+        left: 45px;
+        bottom: 15px;
+    }
+
+    .google{
+        border: 2px solid #9b4f3a;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 300px;
+        background-color: #9b4f3a;
+        color: white;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .sign{
+        color: black;
+        position: relative;
+        left: 50px;
+    }
+    .sign a{
+        color: #9b4f3a;
+        text-decoration: none;
+    }
+    .sign a:hover{
+        text-decoration: underline;
+    }
+
+    .image{
+        flex: 1;
+        background: url(/fur/login.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 70%;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="login">
+            <form class="login-form" action="index.html">
+                <h2>Welcome to Havenmade</h2>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email" required><br>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Create Account</button>
+            </form>
+        
+        <div class="or"><span style="color: #9b4f3a;">---------------OR---------------</span></div>
+        <div>
+            <button class="google"><i class="fa-brands fa-google"></i> Sign Up with Google</button>
+            <button class="google"><i class="fa-brands fa-apple"></i></i> Sign up with apple</button>
+            <h5 class="sign"> Already have an account ?  <a href="login.html">Log in</a></h5>
+        </div>
+        </div>
+        <div class="image"></div>
+    </div>
+
+    </form>
+</body>
+</html>
