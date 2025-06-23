@@ -163,14 +163,14 @@
         <form onsubmit="return bookService()">
           <input type="text" id="name"  placeholder="Full Name" required>
           <input type="email" id="email"  placeholder="Email" required>
-          <input type="date" id="date" required>
-          <input type="time" id="time" required>
           <select id="service" required>
             <option value="">Select a service</option>
             <option value="Consultation">Consultation</option>
             <option value="Installation">Installation</option>
             <option value="Maintenance">Maintenance</option>
           </select>
+          <input type="date" id="date" required>
+          <input type="time" id="time" required>
           <button type="submit">Confirm Booking</button>
           <div class="success-message" id="successMessage">✅ Booking submitted successfully!</div>
         </form>
