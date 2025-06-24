@@ -737,7 +737,12 @@ body{
     font-size: 14px;
     }
 }
-
+@media (min-width: 350px){
+    .line{
+        width: 0;
+        height: 0;
+    }
+}
 
 /* Booking Section */
 .booking{
