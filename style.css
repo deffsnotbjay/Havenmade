@@ -571,69 +571,7 @@ body{
         font-size: 40px;
     }
 }
-/* Havenmade Masterpiece */ 
-.collection {
-    padding: 60px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
 
-.portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    border-radius: 10px;
-}
-
-.portfolio-box {
-    border: 2px solid #4b2e24;
-    padding: 1rem;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-}
-
-.portfolio-box img{
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 0.3rem;
-    margin-bottom: 0.5rem;
-}
-.portfolio-box button{
-    padding: 6px;
-    margin-top: 5px;
-    background-color: #4b2e24;
-    color: #e3c7a5;
-    border: 1px solid #4b2e24;
-    border-radius: 5px;
-}
-
-.t{
-    font-size: 18px;
-    margin-bottom: 5px;
-    color: #4b2e24;
-}
-
-.price{
-    font-size: 16px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #4b2e24;
-}
-/* .see{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background: #4b2e24;
-    color: #e3c7a5;
-    border-radius: 5px;
-    margin-top: 10px;
-    text-decoration: none;
-}
- */
 /* Havenmade About */
 .about{
     display: flex;
@@ -745,85 +683,61 @@ body{
         font-size: 13px;
     }
 }
-/* Gift Section */
-.gift{
+/* Service */
+.services{
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+.line-wrapper{
     display: flex;
-    padding: 40px;
-}
-.gift-left img{
-    width: 500px;
-    height: 500px;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left: -50px;
-}
-.gift-right{
-    padding: 50px;
-}
-.gift-right h5{
-    text-transform: uppercase;
-    color: #4b2e24;
-    font-size: 10px;
-    margin-bottom: 10px;
-}
-.gift-right h2{
-    color: #4b2e24;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 25px;
-}
-.gift-right p{
-    color: #4b2e24;
-    margin-bottom: 10px;
-}
-
-.gift-cards{
-    display: flex;
+    justify-content: center;
     gap: 10px;
 }
-.card{
-    width: 200px;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #e3c7a5;
-    border: 1px solid #4b2e24;
+.line{
+    width: 2px;
+    height: 40px;
+    background-color: #4b2e24;
 }
-.card img{
-    width: 170px;
-    height: 200px;
-    border-radius: 6px;
-    margin-bottom: 10px;
-}
-.card h4{
-    margin-bottom: 2px;
+.services h2{
     color: #4b2e24;
-    font-size: 20px;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
 }
-.card p{
-    margin-bottom: 2px;
-    font-weight: bold;
-    font-size: 15px;
+.services p{
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #291c0e;
+    font-weight: 600;
+}
+.service-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+.service{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    transition: transform 0.5s ease;
+}
+.service:hover{
+    transform: scale(1.05);
+}
+@media(max-width: 600px){
+    .services p{
+    font-weight: 400;  
+    font-size: 14px;
+    }
 }
 
-.get{
-    margin-top: 20px;
-    padding: 5px;
-    color: #e3c7a5;
-    background-color: #4b2e24;
-    font-weight: bold;
-    font-size: 18px;
-    border: 1px solid #4b2e24;
-    border-radius: 8px;
-    animation: get 2s ease-in-out infinite;
-}
-@keyframes get{
-    0%, 100%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.2);
-    }
-}
 
 /* Booking Section */
 .booking{
