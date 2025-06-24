@@ -192,21 +192,88 @@
     </div>
   </section>
 
-  <section id="bookings" class="booking">
-    <div class="book">
-      <div class="book-text">
-        <h2>Book Your Agents</h2>
-        <p>We're a design interior company that transforms spaces into stunning works of art.
-        Would you like to schedule a consultation to explore your design needs...BOOK NOW!!!</p>
-        <ul>
-          <li>Secure online bookings.</li>
-          <li>Instant Confirmation.</li>
-          <li>No Extra fees.</li>
-        </ul>
+<section class="testimonials">
+    <div class="testimonial-header">
+      <h2>&#8765; What Our Clients Say &#8765;</h2>
+      <p>Real stories from homeowners who trusted us with their spaces.</p>
+    </div>
+
+    <div class="testimonial">
+      <div class="testimonial-card">
+        <img src="/fur/Emmanuel.jpg" alt="Client Photo">
+        <h4>Emmanuel S.</h4>
+        <span>Lagos, Nigeria</span>
+        <p>
+          "They transformed my living room into a modern sanctuary. The team was professional, creative, and easy to work with!"
+        </p>
       </div>
 
-      <div class="book-form" id="bookingForm">
-        <h2>Bookings</h2>
+      <div class="testimonial-card">
+        <img src="/fur/b woman.jpeg" alt="Client Photo">
+        <h4>Precious O.</h4>
+        <span>Abuja, Nigeria</span>
+        <p>
+          "Every detail was thoughtfully executed. Our kitchen redesign turned out even better than we imagined!"
+        </p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="/fur/b woman2.jpeg" alt="Client Photo">
+        <h4>Nifemi O.</h4>
+        <span>Lagos, Nigeria</span>
+        <p>
+          "I wanted a calm, minimal bedroom and they nailed it. I love waking up in my space every day. Highly recommended!"
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <div class="faq-grid">
+        <div class="faq-header">
+          <h2 class="faq-title">Frequently Asked Questions</h2>
+          <p class="faq-description">
+            Your level of involvement is entirely up to you. Some clients prefer to be involved in every decision, while others trust us to manage the details.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details>
+                <summary>How do I start an interior design project with you?</summary>
+                <p>Reach out via our contact page to schedule a consultation. We’ll guide you through design goals, timelines, and budget planning.</p>
+              </details>
+
+              <details>
+                <summary>Can you redesign a space using my existing furniture?</summary>
+                <p>Absolutely! We specialize in blending existing pieces with new design elements to elevate your space while preserving what you love.</p>
+              </details>
+
+              <details>
+                <summary>Do you offer full-house interior design services?</summary>
+                <p>Yes, we manage full-home transformations from layout planning to final styling, working closely with contractors and artisans.</p>
+              </details>
+
+              <details>
+                <summary>How long does a typical project take?</summary>
+                <p>Timelines vary by scope, but most single-room projects take 4–6 weeks. Full-house designs may range from 8 to 16 weeks.</p>
+              </details>
+
+              <details>
+                <summary>What design styles do you specialize in?</summary>
+                <p>We tailor each space to your preferences—modern, minimalist, bohemian, luxurious, or eclectic. Your vision guides our design.</p>
+              </details>
+          </div>
+      </div>  
+    </div>    
+  </section>
+
+  <section id="bookings" class="booking">
+    <div class="book"></div>
+
+    <div class="book-form" id="bookingForm">
+        <h2>Book Your Design Consultation</h2>
+        <p>Let’s bring your dream space to life. Fill out the form below and we’ll be in touch soon.</p>
         <form onsubmit="return bookService()">
           <input type="text" id="name"  placeholder="Full Name" required>
           <input type="email" id="email"  placeholder="Email" required>
@@ -222,7 +289,6 @@
           <div class="success-message" id="successMessage">✅ Booking submitted successfully!</div>
         </form>
         <p id="booking-result"></p>
-      </div>
     </div>
   </section>
   <script src="havenmade.js"></script>
