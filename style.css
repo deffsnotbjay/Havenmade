@@ -635,6 +635,24 @@ body{
     font-size: 12px;
     margin-top: 10px;
 }
+.star{
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.star::before {
+    content: '★';
+    color: #4b2e24;
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+}
+
+.star::after {
+    content: '★';
+}
 
 .btn{
     border: 1px solid #4b2e24;
