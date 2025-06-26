@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       if (name && email && date && time && service) {
         // Simulate form submission (you could store locally or call an API)
-        document.getElementById("successMessage").style.display = "block";
+        document.getElementById("successMessage").style.display = "grid";
 
         // Reset form after a short delay
         setTimeout(() => {
