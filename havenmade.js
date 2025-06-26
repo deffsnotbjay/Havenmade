@@ -22,27 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-    document.getElementById("bookingForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent actual form submission
-
-      // Basic validation (already handled by "required" but here’s for control)
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-      const date = document.getElementById("date").value;
-      const time = document.getElementById("time").value;
-      const service = document.getElementById("service").value;
-
-      if (name && email && date && time && service) {
-        // Simulate form submission (you could store locally or call an API)
-        document.getElementById("successMessage").style.display = "grid";
-
-        // Reset form after a short delay
-        setTimeout(() => {
-          document.getElementById("bookingForm").reset();
-          successMessage.style.display ="none";
-        }, 1000);
-      }
-    });
 
     const modal = document.getElementById("imageModal");
     const slider = document.getElementById("slider");
