@@ -75,7 +75,7 @@ body{
 }
 
 .menu a:hover {
-    font-weight: 800;
+    font-weight: 600;
     color: #4b2e24; 
 }
 
@@ -316,6 +316,17 @@ body{
   
 .hero-text {
     max-width: 600px;
+    animation: fadein 2s ease;
+}
+@keyframes fadein{
+    from{
+        opacity: 0; 
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
   
 .hero-text h2 {
@@ -384,7 +395,7 @@ body{
     object-position: center;
 }
   
-  /* Responsive Design */
+  
 @media (max-width: 1200px) {
     .hero-text h2 {
         font-size: 3.5rem;
@@ -925,7 +936,10 @@ details p{
 }
 
 .contacts{
-    background: url(/fur/Book.jpeg) center center/cover no-repeat;
+    background: url(/fur/Living\ 1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     width: 100%;
     padding: 64;
@@ -971,7 +985,7 @@ details p{
     border-radius: 8px;
     font-weight: bold;
     font-size: 20px;
-    transition: all 0.3s ease;
+    transition: all 1s ease;
 }
 .contacts-us:hover{
     color: #4b2e24;
