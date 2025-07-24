@@ -6,19 +6,37 @@ body{
     background-color: #f5e9da;
     font-family: "Inter", sans-serif;
 }
+  /* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: #4b2e24;
+    
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #4b2e24;
+    border-radius: 8px;
+    height: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #f5e9da;
+}
 /* Navbar */
  .navbar {
-    background-color: #e3c7a5; /* Slightly lighter dark grey for navbar */
+    background-color: #e3c7a5; 
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(50px);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 13px 30px; /* Vertical and horizontal padding */
+    padding: 13px 30px; 
     box-sizing: border-box;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap; 
 
-    /* Sticky properties for universal centering */
+    
     position: sticky;
     top: 0; 
     left: 0; 
@@ -468,10 +486,7 @@ body{
     }
 }
   
-  /* Smooth scrolling */
-  html {
-    scroll-behavior: smooth;
-  }
+
 
 /* Havenmade Collection */
 .interior{
