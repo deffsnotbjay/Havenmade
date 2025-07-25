@@ -716,25 +716,25 @@
             <h1>Let's Have a Chat</h1>
             <p>We'd love to hear from you and discuss how we can start your project needs.</p>
 
-            <form action="">
+            <form action="https://submit-form.com/0OqnHxJHJ" method="post">
                 <div class="row">
                     <div class="group">
                         <label for="First">First Name</label>
-                        <input type="text" name="" id="First" placeholder="First Name" required>
+                        <input type="text" name="first-name" id="First" placeholder="First Name" required>
                     </div>
                     <div class="group">
                         <label for="Last">Last Name</label>
-                        <input type="text" name="" id="Last" placeholder="Last Name" required>
+                        <input type="text" name="last-name" id="Last" placeholder="Last Name" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="group">
                         <label for="Email">Email</label>
-                        <input type="email" name="" id="Email" placeholder="Email" required>
+                        <input type="email" name="email" id="Email" placeholder="Email" required>
                     </div>
                     <div class="group">
                         <label for="Service">Service</label>
-                        <select name="" id="Service" required>
+                        <select name="service" id="Service" required>
                             <option value="select">Select a service</option>
                             <option value="consulation">Consulation</option>
                             <option value="installation">Installation</option>
@@ -742,9 +742,10 @@
                         </select>
                     </div>
                 </div>
+                <input type="hidden" name="_redirect" value="https://havenmade.vercel.app/confirm.html">
                 <div class="group">
                     <label for="message">Message</label>
-                    <textarea name="" id="message" rows="5" placeholder="Write your message here...." required></textarea>
+                    <textarea name="message" id="message" rows="5" placeholder="Write your message here...." required></textarea>
                 </div>
                 <button type="submit">
                     Send Message
