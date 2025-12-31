@@ -2038,10 +2038,12 @@ footer {
 
 .footer-link-group ul {
     list-style: none;
+    
 }
 
 .footer-link-group li {
     margin-bottom: 15px;
+    list-style: none;
 }
 
 .footer-link-group a {
@@ -2150,6 +2152,7 @@ footer {
 
     .footer-bottom {
         flex-direction: column;
+        text-align: center;
         gap: 15px;
         margin-top: 80px;
         font-size: 13px;
